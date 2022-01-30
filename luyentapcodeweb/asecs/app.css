@@ -1,0 +1,115 @@
+:root {
+    --txt-color: #fff;
+    --timer-box-bg: #1c2451;
+    --timer-box-txt-bg: #085391;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    color: var(--txt-color);
+    font-family: 'Poppins', sans-serif;
+}
+
+.fireworks-container{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-position: bottom left;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.content-wrapper{
+    position: absolute;
+    z-index: 999;
+    display: flex;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header{
+    font-size: 5rem;
+    font-weight: 700;
+    font-family: revert;
+    color: rgb(245, 181, 81);
+    text-shadow: black 0px 1px 2px;
+
+}
+.year{
+    font-size: 8rem;
+    font-weight: 900;
+    line-height: 1.5;
+    color: #F5B551;
+    text-shadow: 0 6px 11px black;
+
+}
+.timer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.timer-box{
+    background-color: #BF1814;
+    margin: 0 27px;
+    border-radius: 8px;
+}
+.timer-box__count {
+    --size: 10rem;
+    width: var(--size);
+    height: var(--size);
+    display: grid; /*Can giua so*/
+    place-items: center;
+}
+
+.timer-box__count > span {
+    font-size: 5rem;
+    font-weight: 500;
+}
+.timer-box__text {
+    display: grid;
+    place-items: center;
+    background-color: #F7BC02;
+    color: brown;
+    padding: 1rem 0;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+@media only screen and (max-width: 1200px) {
+    html {
+        font-size: 60%;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    html {
+        font-size: 40%;
+    }
+}
+
+/* .imgT{
+    position: absolute;
+    z-index: 99;
+    width: 653px;
+    top: 101px;
+    right: 36px;
+} */
+.copy{
+    z-index: 999;
+    color: white;
+    position: absolute;
+    bottom: 59px;
+    left: 41%;
+    opacity: 0.5;
+}
